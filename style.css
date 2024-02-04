@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* 
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+main {
+    min-height: 100vh;
+    background: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* padding: 12px; */
+    /* border: 2px dashed red; */
+    display: flex;
+    border-radius: 12px;
+}
+
+.img-container {
+    justify-content: center;
+    display: flex;
+}
+
+.img-container img {
+    height: 470px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mobile {
+    display: none;
+}
+
+.description-container {
+    background: #ffffff;
+    padding: 22px 36px;
+    border-radius: 0 12px 12px 0;
+}
+
+.description-container h1 {
+    font-family: 'Fraunces', serif;
+    color: #20252b;
+    line-height: 2rem;
+}
+
+.header, .desc {
+    font-family: 'Montserrat', sans-serif;
+    color: #7a7b80;
+}
+
+.header {
+    letter-spacing: .3rem;
+    font-size: 14px;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price-container h1 {
+    color: #3d8168;
+}
+
+.price-container span {
+    text-decoration-line: line-through;
+    color: #7a7b80;
+    padding: 8px 24px;
+    font-size: 14px;
+    /* display: flex; */
+    /* border: 2px solid red; */
+    margin-bottom: 8px;
+}
+
+.btn-paid {
+    width: 100%;
+}
+
+.btn-paid button {
+    width: 100%;
+    border: none;
+    padding: 18px 24px;
+    background: #3d8168;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-paid img {
+    padding: 0 12px 0 0;
+}
+
+.btn-paid button:hover {
+    cursor: pointer;
+    background: #1a4031;
+}
+
+@media only screen and (max-width: 666px) {
+    .container {
+        display: grid;
+    }
+
+    .description-container {
+        border-radius: 0 0 12px 12px;
+        width: 428px;
+    }
+
+    .img-container img {
+        height: 300px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    * br {
+        display: none;
+    }
+}
